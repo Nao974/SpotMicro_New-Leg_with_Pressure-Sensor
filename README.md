@@ -1,6 +1,6 @@
 # SpotMicro: New leg with pressure sensor
 
-[Version française](./README_fr.md)
+[Version française](./README_FR.md)
 
 <a id="up"> </a>
 
@@ -9,7 +9,7 @@ The pressure sensor at the end of the leg will allow you to know:
 - The force exerted on it
 - And at an instant "t" the direction of the force exerted (pressure // release)
 
-[![Video Presentation](assets/video_presentation.png)](https://youtu.be/9EAe0ReYfHI)
+[![Video Presentation](assets/presentation.png)](https://youtu.be/5eInNg3Okts)
 
 ---
 

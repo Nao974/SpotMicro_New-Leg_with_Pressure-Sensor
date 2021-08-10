@@ -9,7 +9,7 @@ Le capteur de pression au bout de la patte va permettre de savoir :
 - La force exercée sur celle ci
 - Et à un instant "t" la direction de la force exercée (pression // relâchement)
 
-[![Video Presentation](assets/video_presentation.png)](https://youtu.be/9EAe0ReYfHI)
+[![Video Presentation](assets/presentation.png)](https://youtu.be/5eInNg3Okts)
 
 ---
 
