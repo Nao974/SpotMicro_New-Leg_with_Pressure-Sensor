@@ -12,6 +12,13 @@ Le capteur de pression au bout de la patte va permettre de savoir :
 [![Video Presentation](assets/presentation.png)](https://youtu.be/5eInNg3Okts)
 
 ---
+## Câblage
+
+Le cablage est très simple, la lecture de la pression se fait sur un port analogique:
+
+<img alt="wiring" width="85%" src="assets/wiring.png" />
+
+---
 
 ## Création de la "Poire"
 
@@ -38,7 +45,7 @@ Le principe est d'imprimer des moules en 3D afin de "modeler" du Silicone de joi
 
 Le Silicone est au préalable malaxé dans de l'eau saturé en liquide vaisselle :
 
-**VIDEOOOOOOOOOOOOO**
+[![Silicone Mold](assets/silicone-mold.png)](https://youtu.be/qxboo4HXB_k)
 
 Quelques heures de séchage et voilà notre pièce est prête, plusieurs Tests d'épaisseur ont été réalisé:
 
@@ -61,6 +68,8 @@ Avec une précision de 20 mV/kPa, ce capteur n'est pas assez sensible, même qua
 Avec une précision de 450mv/kPa, ce capteur est super,je capte les légères pressions ainsi que les gros écrasements:
 
 [![Result Sensor](assets/result_sensor.png)](https://youtu.be/x-UZMXbWamg)
+
+[DataSheet MPX5010DP](./datasheets/mpx5010-2165.pdf)
 
 ---
 

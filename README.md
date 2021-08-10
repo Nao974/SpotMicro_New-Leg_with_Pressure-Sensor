@@ -13,6 +13,14 @@ The pressure sensor at the end of the leg will allow you to know:
 
 ---
 
+## Wiring
+
+The wiring is very simple, the pressure is read on an analog port:
+
+<img alt="wiring" width="85%" src="assets/wiring.png" />
+
+---
+
 ## Creation of "pear"
 
 <a id="pear"> </a>
@@ -38,7 +46,7 @@ The principle is to 3D print molds in order to "model" Silicone of bathroom join
 
 The Silicone is first kneaded in water saturated with dishwashing liquid:
 
-** VIDEOOOOOOOOOOOOO **
+[![Silicone Mold](assets/silicone-mold.png)](https://youtu.be/qxboo4HXB_k)
 
 A few hours of drying and our part is ready, several thickness tests have been carried out:
 
@@ -61,6 +69,8 @@ With an accuracy of 20 mV / kPa, this sensor is not sensitive enough, even when 
 With an accuracy of 450mv / kPa, this sensor is great, I capture light pressures as well as large crushes:
 
 [![Result Sensor](assets/result_sensor.png)](https://youtu.be/x-UZMXbWamg)
+
+[DataSheet MPX5010DP](./datasheets/mpx5010-2165.pdf)
 
 ---
 
