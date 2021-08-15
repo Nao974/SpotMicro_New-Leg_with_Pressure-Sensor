@@ -31,7 +31,7 @@ const uint16_t CALIBRATE_NB = 500;
 const uint8_t TRIGGER_PRESSURE = 10;
 
 // Deviation from the calibration validating a change of direction
-const uint8_t TRIGGER_DIRECTION = 3;
+const uint8_t TRIGGER_DIRECTION = 5;
 
 
 class LegPressureSensor {

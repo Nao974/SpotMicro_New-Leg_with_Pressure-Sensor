@@ -14,9 +14,71 @@ Le capteur de pression au bout de la patte va permettre de savoir :
 ---
 ## Câblage
 
-Le cablage est très simple, la lecture de la pression se fait sur un port analogique:
+Le câblage est très simple, la lecture de la pression se fait sur un port analogique:
 
-<img alt="wiring" width="85%" src="assets/wiring.png" />
+<img alt="wiring" width="65%" src="assets/wiring.png" />
+
+---
+
+## Librairie LegPressureSensor
+
+Ecrite pour VSCode il suffit de la copier dans le dossier *./lib* de votre projet Plateform-IO.
+
+### Les Constantes
+
+```C
+const uint16_t CALIBRATE_NB = 500;
+const uint8_t TRIGGER_PRESSURE = 10;
+const uint8_t TRIGGER_DIRECTION = 5;
+```
+
+- CALIBRATE_NB : Nombre de mesure lors du calcul de la valeur de calibration.
+- TRIGGER_PRESSURE : Ecart par rapport à la calibration validant un changement d'état.
+- TRIGGER_PRESSURE : Ecart par rapport à la calibration validant un changement de sens.
+
+### Les Méthodes Publics (fonctions)
+
+```C
+//Constructor
+LegPressureSensor(const uint8_t pin);
+
+// Calculation of the calibration
+void calibrate();   
+
+// Pressure reading and state update
+void read();
+
+// Return the last measured pressure
+uint16_t pressureValue();
+
+// Return the calculated released pressure
+uint16_t calibrateValue();
+
+// Return the current max pressure
+uint16_t pressureMax();
+
+// Return the direction of movement
+int8_t   direction();
+
+// Returns True / False if pressed
+bool isPressed();
+```
+
+- `LegPressureSensor(const uint8_t pin)` : Le Constructeur avec la broche analogique en paramètre, renvoie un objet correspondant à cette classe.
+
+- `calibrate()` : effectue *CALIBRATE_NB* mesure à la suite puis calcule la moyenne. Cette méthode doit être appelée avec la patte levée permettant ainsi d'avoir une référence.
+
+- `read()` : lecture de la mesure, MAJ de la valeur maximum et de l'état de la patte, ne renvoie rien.
+
+- `pressureValue()` : retourne la valeur de la mesure effectuée par la méthode `read()`.
+
+- `calibrateValue()` : retourne la valeur de calibration calculée par la méthode `calibrate()`.
+
+- `pressureMax()` : retourne la valeur maximum exercée depuis le début de la pression, elle est remise à zéro lors du relâchement  de la patte.
+
+- `direction()` : permet de connaitre à un moment *'t'* si le mouvement se poursuit vers une pression (+1) un relâchement  (-1) ou est stationnaire (0).
+
+- `isPressed()` : retourne *True* si la pression exercée est supérieur u égale à la calibration + *TRIGGER_PRESSURE*, sinon renvoie *false*.
 
 ---
 
@@ -25,6 +87,8 @@ Le cablage est très simple, la lecture de la pression se fait sur un port analo
 <a id="pear"> </a>
 
 A l'image de la patte du robot A1 d'Unitree, je suis partie sur la création d'une "Poire" flexible.
+
+<img alt="a1-unitree" width="45%" src="assets/a1-unitree.png" />
 
 D'abord par impression 3d en filament **FLEX** (TPU), mais l'exercice n'est pas facile car celui est flexible (ben oui !!!) et il est difficile d'avoir un débit constant à la sortie de l'extrudeur.
 Après des tests de différentes épaisseurs, cela reste trop rigide est ce déchire très rapidement:
