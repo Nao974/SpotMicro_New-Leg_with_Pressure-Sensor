@@ -109,7 +109,7 @@ Le principe est d'imprimer des moules en 3D afin de "modeler" du Silicone de joi
 
 Le Silicone est au préalable malaxé dans de l'eau saturé en liquide vaisselle :
 
-[![Silicone Mold](assets/silicone-mold.png)](https://youtu.be/qxboo4HXB_k)
+[![Silicone Mold](assets/result_molding.png)](https://youtu.be/2pnlD2yrzPs)
 
 Quelques heures de séchage et voilà notre pièce est prête, plusieurs Tests d'épaisseur ont été réalisé:
 

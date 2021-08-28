@@ -111,7 +111,7 @@ The principle is to 3D print molds in order to "model" Silicone of bathroom join
 
 The Silicone is first kneaded in water saturated with dishwashing liquid:
 
-[![Silicone Mold](assets/silicone-mold.png)](https://youtu.be/qxboo4HXB_k)
+[![Silicone Mold](assets/result_molding.png)](https://youtu.be/2pnlD2yrzPs)
 
 A few hours of drying and our part is ready, several thickness tests have been carried out:
 
