@@ -25,7 +25,7 @@ const int8_t DIR_FLAT = 0;
 const int8_t DIR_PRESSURE = +1;
 
 // Number of measurements for calculating the average
-const uint16_t CALIBRATE_NB = 500;
+const uint16_t CALIBRATE_NB = 100;
 
 // Deviation from the calibration validating a change of state
 const uint8_t TRIGGER_PRESSURE = 10;

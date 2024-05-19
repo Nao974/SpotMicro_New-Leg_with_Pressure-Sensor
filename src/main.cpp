@@ -17,7 +17,7 @@ LegPressureSensor leg1(A0);
 //    and no blocking function
 void vumeterOneByOne() {
     // Determines whether to turn on or extend the LED according to the row of the LED
-    if ( vumetre > (i*8) && leg1.isPressed() ) digitalWrite(pin_vumetre[i], HIGH);
+    if ( vumetre > (i*16) && leg1.isPressed() ) digitalWrite(pin_vumetre[i], HIGH);
     else digitalWrite(pin_vumetre[i], LOW);
 
     // Once the last LED has been processed, a new value is displayed
@@ -37,10 +37,14 @@ void setup() {
     leg1.calibrate();
 
     // Initializes pins in digital output 
-    for (uint8_t i =0; i<8; i++)
+    for (uint8_t i =0; i<8; i++) {
         pinMode(pin_vumetre[i], OUTPUT);
+        digitalWrite(pin_vumetre[i], HIGH);
+    }    
     pinMode(pin_pressed, OUTPUT);
+        digitalWrite(pin_pressed, HIGH);
     pinMode(pin_released, OUTPUT);
+        digitalWrite(pin_released, HIGH);
 }
 
 
