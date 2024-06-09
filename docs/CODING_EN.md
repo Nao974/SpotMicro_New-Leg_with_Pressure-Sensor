@@ -73,7 +73,7 @@ legs[LEG_BR].init(A11, 10);
 ```
 
 ### Calibration
-The robot must be placed on a support with the legs not touching the ground:
+The robot must be placed on a support with the legs not touching the ground:  
 <img alt="Robot on support" src="assets/coding_calibration.png"/>
 
 **The calibration must be done *empty* then by compressing the pad**

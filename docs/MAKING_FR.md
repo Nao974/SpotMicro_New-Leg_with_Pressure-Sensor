@@ -39,7 +39,7 @@ Le principe est d'imprimer des moules en 3D afin de "modeler" du Silicone de joi
 ### Mini carte électronique & câblage
 #### Carte coté capteur
 Une 1ere carte est installée sur chaque patte afin de relier le capteur de pression au µControleur :  
-<div align="center"><img alt="PCB Patte" width="85%" src="assets/making_leg_PcbA.png"/></div>
+<div align="center"><img alt="PCB Patte" width="85%" src="assets/making_Leg_PcbA.png"/></div>
 
 Liste des composants :  
 - 1x Capteur mpx5010-2165
@@ -52,11 +52,11 @@ Câblage :
 
 #### Carte coté µControleur
 Carte de type Shield à rajouter sur l'Arduino Mega permettant de transmettre l'alimentation 5V, la masse, le signal pour allumer la LED, et récupérer la valeur du capteur:  
-<div align="center"><img alt="PCB Shield µC" width="85%" src="assets/making_leg_PcbB.png"/></div> 
+<div align="center"><img alt="PCB Shield µC" width="85%" src="assets/making_Leg_PcbB.png"/></div> 
 
 #### Passe-fil
 J'ai modélisé un passe-fil à rajouter sur le "coude" de la patte que vous retrouverez dans le dossier *MCAD* : 
-<div align="center"><img alt="Modélisation Passe Fil" width="45%" src="assets/making_leg_PcbC.png" />&nbsp;<img alt="Passe Fil monté" width="45%" src="assets/making_leg_PcbC2.png" /></div>  
+<div align="center"><img alt="Modélisation Passe Fil" width="45%" src="assets/making_Leg_PcbC.png" />&nbsp;<img alt="Passe Fil monté" width="45%" src="assets/making_Leg_PcbC2.png" /></div>  
 
 ---
 

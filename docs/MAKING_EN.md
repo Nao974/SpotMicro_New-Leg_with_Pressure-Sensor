@@ -39,7 +39,7 @@ The principle is to print 3D molds in order to "model" Silicone bathroom joints:
 ### Mini electronic card & wiring
 #### Sensor side card
 A 1st card is installed on each leg in order to connect the pressure sensor to the µController:
-<div align="center"><img alt="PCB Leg" width="85%" src="assets/making_leg_PcbA.png"/></div>
+<div align="center"><img alt="PCB Leg" width="85%" src="assets/making_Leg_PcbA.png"/></div>
 
 List of components:
 - 1x Sensor mpx5010-2165
@@ -52,11 +52,11 @@ Wiring:
 
 #### µController side card
 Shield type card to add to the Arduino Mega allowing to transmit the 5V power supply, the ground, the signal to light the LED, and to retrieve the value of the sensor:
-<div align="center"><img alt="PCB Shield µC" width="85%" src="assets/making_leg_PcbB.png"/></div>
+<div align="center"><img alt="PCB Shield µC" width="85%" src="assets/making_Leg_PcbB.png"/></div>
 
 #### Grommet
 I modeled a grommet to add on the "elbow" of the leg that you will find in the *MCAD* folder:
-<div align="center"><img alt="Wire Grommet Modeling" width="45%" src="assets/making_leg_PcbC.png" />&nbsp;<img alt="Mounted Wire Grommet" width="45%" src="assets/making_leg_PcbC2.png" /></div>
+<div align="center"><img alt="Wire Grommet Modeling" width="45%" src="assets/making_Leg_PcbC.png" />&nbsp;<img alt="Mounted Wire Grommet" width="45%" src="assets/making_Leg_PcbC2.png" /></div>
 
 ---
 
